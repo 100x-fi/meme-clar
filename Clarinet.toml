@@ -1,0 +1,55 @@
+[project]
+name = 'meme-clar'
+description = ''
+authors = []
+telemetry = false
+cache_dir = './.cache'
+requirements = []
+
+[contracts.mock-bmeme]
+path = 'contracts/mock-bmeme.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.bmeme]
+path = 'contracts/bmeme.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.meme]
+path = 'contracts/meme.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.meme-vester]
+path = 'contracts/meme-vester.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.trait-mintable-sip-010]
+path = 'contracts/traits/trait-mintable-sip-010.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.trait-burnable-sip-010]
+path = 'contracts/traits/trait-burnable-sip-010.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.trait-ownable]
+path = 'contracts/traits/trait-ownable.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.trait-sip-010]
+path = 'contracts/traits/trait-sip-010.clar'
+clarity_version = 2
+epoch = 2.4
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false

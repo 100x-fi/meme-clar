@@ -1,0 +1,25 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://api.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: trait-sip-010
+            expected-sender: SP2GEP37WGW6QRFHVDAM3XW9Z716SRS94FJXPZFT3
+            cost: 10193421
+            path: contracts/traits/trait-sip-010.clar
+            anchor-block-only: true
+            clarity-version: 2
+        - contract-publish:
+            contract-name: meme
+            expected-sender: SP2GEP37WGW6QRFHVDAM3XW9Z716SRS94FJXPZFT3
+            cost: 10266930
+            path: contracts/meme.clar
+            anchor-block-only: true
+            clarity-version: 2
+      epoch: "2.4"
